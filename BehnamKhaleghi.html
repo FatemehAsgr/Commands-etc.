@@ -87,8 +87,8 @@
         margin-left: 100px; /* Same as the width of the sidenav */
         font-size: 17px; /* Increased text to enable scrolling */
         padding: 0px 0px;
-        margin-top: 130px;
-        margin-right: 20px;
+        margin-top: 120px;
+        margin-right: 50px;
         font-family: 'Source Sans Pro', sans-serif;
        }
 
@@ -124,20 +124,20 @@
       color: #4D4F4F;
     }
     #footer {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      text-align: right;
-      height: 50px;
+      margin-top: 310px;
+      text-align: center;
+      height: 30px;
+      font-size: 12px;
+      background-color: #D7EAF0;
+      color: #154251;
     }
     img{
       overflow: hidden;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       border-radius: 100px;
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       margin-left: 20px;
       margin-top: 20px;
       margin-right: 30px;
@@ -162,9 +162,9 @@
       onclick="w3_close()"> &times;</button>
       <img src="https://media.licdn.com/dms/image/C5603AQFgsZgt3WhBow/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=uGWKnVZGlHuJ4Eqrn3GzmhFZ1TNKTPVaFCy5a_Z9zEc" alt="Behnam">
       <div id="menu_items">
-        <a href="#" class="w3-bar-item w3-button" id="menu">Home</a>
-        <a href="#" class="w3-bar-item w3-button" id="menu">Publications</a>
-        <a href="#" class="w3-bar-item w3-button" id="menu">Research</a>
+        <a href="./" class="w3-bar-item w3-button" id="menu">Home</a>
+        <a href="file:///Users/fatemeh/Desktop/تصویر%20مدارک%20من/Behnam/Publications.html" class="w3-bar-item w3-button" id="menu">Publications</a>
+        <a href="" class="w3-bar-item w3-button" id="menu">Research</a>
         <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu">CV</a>
         <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu">Google Scholar</a>
         <button id="menu" class="dropdown-btn">Contact Me
@@ -185,24 +185,19 @@
       <div class="main">
         <h2>Behnam Khaleghi</h2>
         <hr class="hr">
-        <p>I'm a second year PhD student in Department of Computer Science and Engineering (<a class="link" href="https://cse.ucsd.edu">CSE</a>) at the University of California San Diego (<a class="link" href="https://www.ucsd.edu">UCSD</a>) under supervision of <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Professor Tajana Rosing</a>. I received my M.S. and B.Sc degrees from the School of Computer Engineering (<a class="link" href="http://ce.sharif.ir">CE</a>) at <a class="link" href="http://www.sharif.ir/web/en">Sharif University of technology</a>, in 2013 and 2016 respectively. My research interests are Electronic Design Automation, Reconfigurable Computing and Reliability.</p>
+        <p>I'm a second year PhD student in Department of Computer Science and Engineering (<a class="link" href="https://cse.ucsd.edu">CSE</a>) at the University of California San Diego (<a class="link" href="https://www.ucsd.edu">UCSD</a>) under supervision of Professor <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Tajana Rosing</a>. I received my M.S. and B.Sc degrees from the School of Computer Engineering (<a class="link" href="http://ce.sharif.ir">CE</a>), under supervision of Dr <a class="link" href="http://sharif.edu/~asadi/">Hossein Asadi</a> at <a class="link" href="http://www.sharif.ir/web/en">Sharif University of technology</a>, in 2013 and 2016 respectively. My research interests are Electronic Design Automation, Reconfigurable Computing and Reliability.</p>
         <p>Here's my <a class="link" href="http://ce.sharif.edu/~behnam_khaleghi/">CV</a> and <a class="link" href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en">Google Scholar</a>.</</p>
       </div>
     </div>
-
-
-
-
     <div class="footer container-lg px-3" role="contentinfo" id="footer">
-    <div class="text-black">
-      <p class="foot">last update : October 2018</p>
+      <div class="text-black">
+        With &#9829; by Fatemeh, October 2018
+      </div>
     </div>
-  </div>
-
     <script>
       function w3_open() {
         document.getElementById("main").style.marginLeft = "25%";
-        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.width = "220px";
         document.getElementById("mySidebar").style.display = "block";
         document.getElementById("openNav").style.display = 'none';
       }
