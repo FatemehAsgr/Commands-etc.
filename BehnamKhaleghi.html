@@ -2,8 +2,221 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="keywords" content="Behnam Khaleghi, Behnam, Khaleghi, Tajana Šimunić Rosing, Tajana Rosing, Tajana, behnamkhaleghi, hardware, Electronic Design Automation, Reconfigurable Computing, Reconfigurable, Computing, Reliability, Hossein Asadi, Hossein, ISCA, DAC, Sharif, Sharif University, Sharif University Of technology, FPL, VLSI" />
-  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>  #openNav{
+      z-index: 100;
+    }
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+        display: none;
+        padding-left: 8px;
+    }
+    .conferance{
+      color: #E13F01;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .dropdown {
+        position: relative;
+        background-color: #006A96;
+        color: #FFCD00;
+        font-size: 18px;
+        border-radius: 4px;
+        border: 3px;
+        cursor: context-menu;
+    }
+    .dropdown:hover{
+      background-color: #182B49;
+      color: #C69214;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        color: #252626;
+        min-width: 400px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .number{
+      color: #FFCD00;
+      text-shadow: 1px 1px #E1B900;
+    }
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
+    .foot{
+      font-size: 12px;
+      margin-right: 10px;
+      margin-bottom: 0px;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      }
+
+      .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+
+      .topnav a.active {
+      }
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 102px;
+      }
+      .link{
+        color: #086DE7;
+        text-decoration: none;
+      }
+      .noted{
+        color: #D90000;
+        text-decoration: none;
+        text-shadow: 3px 3px #F2DCDC;
+      }
+      #mySidebar{
+        background-color: #2B2C2D;
+      }
+      body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #F6F6F6;
+          }
+      .sidenav {
+          height: 100%;
+          width: 200px;;
+          position: fixed;
+          z-index: 100;
+          top: 0;
+          left: 0;
+          background-color: #2B2C2D;
+          overflow-x: hidden;
+          padding-top: 20px;
+      }
+
+      .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 20px;
+          color: #AEAEAE;
+          display: block;
+      }
+
+      .sidenav a:hover {
+      }
+
+      .main {
+          margin-left: 100px; /* Same as the width of the sidenav */
+          font-size: 17px; /* Increased text to enable scrolling */
+          padding: 0px 0px;
+          margin-top: 130px;
+          margin-right: 20px;
+          font-family: 'Source Sans Pro', sans-serif;
+         }
+         .content {
+             margin-left: 100px; /* Same as the width of the sidenav */
+             font-size: 17px; /* Increased text to enable scrolling */
+             padding: 0px 0px;
+             margin-top: 130px;
+             margin-right: 20px;
+             font-family: 'Source Sans Pro', sans-serif;
+            }
+      @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+      }
+
+      /* Gradient transparent - color - transparent */
+      .hr{
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+          margin-top: 0px;
+            }
+      .sidenav a, .dropdown-btn {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        color: #C8C8C8;
+        }
+      h2{
+        font-size: 40px;
+        font-weight: 100;
+        color: #4D4F4F;
+      }
+      #footer {
+        margin-top: 50px;
+        text-align: center;
+        height: 30px;
+        font-size: 12px;
+        background-color: #D7EAF0;
+        color: #154251;
+      }
+      img{
+        overflow: hidden;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 30px;
+      }
+      #menu_items{
+        margin-top: 30px;
+        color: #C8C8C8;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .sticky_header{
+        background-color: #313131;
+      }
+      font{
+        color: #880000;
+        font-weight: 550;
+      }
+      .Abstract{
+        background-color: #182B49;
+        color: #C69214;
+        border-radius: 3px;
+        height: 30px;
+        width: 70px;
+        z-index: 0;
+      }
+      ul{
+        display: flex;
+      }
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
     display: none;
@@ -124,12 +337,13 @@
       color: #4D4F4F;
     }
     #footer {
-      margin-top: 310px;
+      margin-top: 350px;
       text-align: center;
       height: 30px;
       font-size: 12px;
       background-color: #D7EAF0;
       color: #154251;
+      width: 100%;
     }
     img{
       overflow: hidden;
@@ -159,17 +373,15 @@
   <body>
     <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()"> &times;</button>
+      onclick="w3_close()" style="color: red; size: 24px;"> &larr;</button>
       <img src="https://media.licdn.com/dms/image/C5603AQFgsZgt3WhBow/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=uGWKnVZGlHuJ4Eqrn3GzmhFZ1TNKTPVaFCy5a_Z9zEc" alt="Behnam">
       <div id="menu_items">
-        <a href="./" class="w3-bar-item w3-button" id="menu">Home</a>
-        <a href="file:///Users/fatemeh/Desktop/تصویر%20مدارک%20من/Behnam/Publications.html" class="w3-bar-item w3-button" id="menu">Publications</a>
-        <a href="" class="w3-bar-item w3-button" id="menu">Research</a>
-        <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu">CV</a>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu">Google Scholar</a>
-        <button id="menu" class="dropdown-btn">Contact Me
-        <i class="fa fa-caret-down"></i>
-      </button>
+        <a href="file:///Users/fatemeh/Desktop/Behnam/behnamkhaleghi.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
+        <a href="file:///Users/fatemeh/Desktop/Behnam/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
+        <a href="file:///Users/fatemeh/Desktop/Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-area-chart"></i> | Research</a>
+        <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-mortar-board"></i> | CV</a>
+        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar-square ai-1.5x"></i> | Google Scholar</a>
+        <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
           <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu">Email</a>
           <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu">Linkedin</a>
@@ -185,8 +397,10 @@
       <div class="main">
         <h2>Behnam Khaleghi</h2>
         <hr class="hr">
-        <p>I'm a second year PhD student in Department of Computer Science and Engineering (<a class="link" href="https://cse.ucsd.edu">CSE</a>) at the University of California San Diego (<a class="link" href="https://www.ucsd.edu">UCSD</a>) under supervision of Professor <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Tajana Rosing</a>. I received my M.S. and B.Sc degrees from the School of Computer Engineering (<a class="link" href="http://ce.sharif.ir">CE</a>), under supervision of Dr <a class="link" href="http://sharif.edu/~asadi/">Hossein Asadi</a> at <a class="link" href="http://www.sharif.ir/web/en">Sharif University of technology</a>, in 2013 and 2016 respectively. My research interests are Electronic Design Automation, Reconfigurable Computing and Reliability.</p>
-        <p>Here's my <a class="link" href="http://ce.sharif.edu/~behnam_khaleghi/">CV</a> and <a class="link" href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en">Google Scholar</a>.</</p>
+        <p>I'm a second year PhD student in Department of Computer Science and Engineering (<a class="link" href="https://cse.ucsd.edu">CSE</a>) at the University of California San Diego (<a class="link" href="https://www.ucsd.edu">UCSD</a>) under supervision of Professor <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Tajana Rosing</a>.
+           I received my M.S. and B.Sc degrees from the School of Computer Engineering (<a class="link" href="http://ce.sharif.ir">CE</a>) at <a class="link" href="http://www.en.sharif.edu">Sharif University of technology</a>, under supervision of Professor <a class="link" href="http://sharif.edu/~asadi/">Hossein Asadi</a>, in 2013 and 2016 respectively. My research interests are Electronic Design Automation, Reconfigurable Computing and Reliability.
+        </p>
+        <p>Here's my <a class="link" href="http://ce.sharif.edu/~behnam_khaleghi/"><i class="fa fa-mortar-board"></i>CV</a> and <a class="link" href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i> Google Scholar</a>.</</p>
       </div>
     </div>
     <div class="footer container-lg px-3" role="contentinfo" id="footer">
