@@ -203,7 +203,6 @@
         background-color: #313131;
       }
       font{
-        color: #880000;
         font-weight: 550;
       }
       .Abstract{
@@ -217,17 +216,17 @@
       ul{
         display: flex;
       }
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-    display: none;
-    padding-left: 8px;
-}
+    /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+    .dropdown-container {
+        display: none;
+        padding-left: 8px;
+    }
 
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-    float: right;
-    padding-right: 8px;
-}
+    /* Optional: Style the caret down icon */
+    .fa-caret-down {
+        float: right;
+        padding-right: 8px;
+    }
   .foot{
     font-size: 12px;
     margin-right: 10px;
@@ -365,6 +364,11 @@
     .sticky_header{
       background-color: #313131;
     }
+    .address{
+      color: black;
+      font-size: 16px;
+      font-weight: lighter;
+    }
   </style>
 </head>
 <title>Behnam Khaleghi</title>
@@ -378,9 +382,10 @@
       <div id="menu_items">
         <a href="file:///Users/fatemeh/Desktop/Behnam/behnamkhaleghi.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
         <a href="file:///Users/fatemeh/Desktop/Behnam/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
-        <a href="file:///Users/fatemeh/Desktop/Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-area-chart"></i> | Research</a>
+        <a href="file:///Users/fatemeh/Desktop/Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
         <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-mortar-board"></i> | CV</a>
         <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar-square ai-1.5x"></i> | Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
           <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu"><i class="material-icons" style="font-size:16px">email</i> | Email</a>
@@ -396,6 +401,9 @@
       </div>
       <div class="main">
         <h2>Behnam Khaleghi</h2>
+        <p class="address"><font style="font-weight: 500; color=black;">PhD student</font></br>Computer Science and Engineering Department</br>University of California San Diego</br>9500 Gilman Dr, CA, 92093</br>
+        Bldg EBU3 (CSE), Room 2142
+        </p>
         <hr class="hr">
         <p>I'm a second year PhD student in Department of Computer Science and Engineering (<a class="link" href="https://cse.ucsd.edu">CSE</a>) at the University of California San Diego (<a class="link" href="https://www.ucsd.edu">UCSD</a>) under supervision of Professor <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Tajana Rosing</a>.
            I received my M.S. and B.Sc degrees from the School of Computer Engineering (<a class="link" href="http://ce.sharif.ir">CE</a>) at <a class="link" href="http://www.en.sharif.edu">Sharif University of technology</a>, under supervision of Professor <a class="link" href="http://sharif.edu/~asadi/">Hossein Asadi</a>, in 2013 and 2016 respectively. My research interests are Electronic Design Automation, Reconfigurable Computing and Reliability.
