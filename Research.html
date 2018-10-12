@@ -83,17 +83,17 @@
       font-family: 'Source Sans Pro', sans-serif;
       background-color: #F6F6F6;
         }
-    .sidenav {
-        height: 100%;
-        width: 200px;;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        background-color: #2B2C2D;
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
+        .sidenav {
+            height: 100%;
+            width: 220px;;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background-color: #2B2C2D;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
 
     .sidenav a {
         padding: 6px 8px 6px 16px;
@@ -190,7 +190,7 @@
         <a href="file:///Users/fatemeh/Desktop/Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-area-chart"></i> | Research</a>
         <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-mortar-board"></i> | CV</a>
         <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar-square ai-1.5x"></i> | Google Scholar</a>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
+        <a href="file:///Users/fatemeh/Desktop/Behnam/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
           <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu"><i class="material-icons" style="font-size:16px">email</i> | Email</a>
@@ -231,45 +231,45 @@
       </div>
     </div>
 </div>
-    <script>
-      function w3_open() {
-        document.getElementById("main").style.marginLeft = "25%";
-        document.getElementById("mySidebar").style.width = "25%";
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("openNav").style.display = 'none';
-      }
-      function w3_close() {
-        document.getElementById("main").style.marginLeft = "0%";
-        document.getElementById("mySidebar").style.display = "none";
-        document.getElementById("openNav").style.display = "inline-block";
-      }
-      window.onscroll = function() {myFunction()};
+<script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "20%";
+    document.getElementById("mySidebar").style.width = "220px";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+  window.onscroll = function() {myFunction()};
 
-      var header = document.getElementById("openNav");
-      var sticky = header.offsetTop;
+  var header = document.getElementById("openNav");
+  var sticky = header.offsetTop;
 
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
-        } else {
-          header.classList.remove("sticky");
-        }
-      }
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
 
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
       }
-    </script>
+    });
+  }
+</script>
   </body>
 </html>
