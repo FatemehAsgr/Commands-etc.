@@ -108,17 +108,17 @@
       font-family: 'Source Sans Pro', sans-serif;
       background-color: #F6F6F6;
         }
-    .sidenav {
-        height: 100%;
-        width: 200px;;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        background-color: #2B2C2D;
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
+        .sidenav {
+            height: 100%;
+            width: 220px;;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background-color: #2B2C2D;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
 
     .sidenav a {
         padding: 6px 8px 6px 16px;
@@ -213,14 +213,21 @@
       display: flex;
     }
     .pdf{
-      margin-bottom: 100px;
+      margin-bottom: -10px;
       margin-left: 8px;
+      margin-top: -12px;
       color: #BD0600;
       font-size: 14px;
       cursor: context-menu;
     }
     .pdf:hover{
       font-weight: bold;
+    }
+    .fa-file-pdf-o{
+      font-weight: bold;
+    }
+    a{
+      text-decoration: none;
     }
   </style>
 </head>
@@ -238,7 +245,7 @@
         <a href="file:///Users/fatemeh/Desktop/Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-area-chart"></i> | Research</a>
         <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-mortar-board"></i> | CV</a>
         <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar-square ai-1.5x"></i> | Google Scholar</a>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
+        <a href="file:///Users/fatemeh/Desktop/Behnam/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
           <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu"><i class="material-icons" style="font-size:16px">email</i> | Email</a>
@@ -257,91 +264,155 @@
           <hr class="hr">
           <ul class="w3-ul">
             <li>
-              <div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div>
-            </li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
             <li><font class="number"> 1.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", <font class="conferance">IEEE TVLSI</font>, 2018</br></li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era"</p></div></div></li>
             <li><font class="number">2.</font> Seifoori, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era", <font class="conferance">Book Chapter in Advances in Computers</font>, 2018</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
             <li><font class="number"> 3.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", <font class="conferance">IEEE TVLSI</font>, 2018</br></li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Voltage Adaptation under Temperature Variation"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Voltage Adaptation under Temperature Variation"</p></div></div></li>
             <li><font class="number">4.</font> Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Voltage Adaptation under Temperature Variation", <font class="conferance">SMACD</font>, 2018</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks"</p></div></div></li>
             <li><font class="number">5.</font> Yazdanbakhsh, M. Brzozowski, <font>B. Khaleghi</font>, S. Ghodrati, K. Samadi, N. S. Kim, H. Esmaeilzadeh, "FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks", <font class="conferance">FCCM</font>, 2018</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics"</p></div></div></li>
             <li><font class="number">6.</font> Sacks, <font>B. Khaleghi</font>, D. Mahajan, R. Lawson, H. Esmaeilzadeh, "RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics", <font class="conferance">ISCA</font>, 2018</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Programmable Logic Design"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Programmable Logic Design"</p></div></div></li>
             <li><font class="number">7.</font> Asadi, Z. Ebrahimi, <font>B. Khaleghi</font>, "Programmable Logic Design", <font class="conferance">US Patent Application</font>, 2018</li>
           </ul>
-          <ul class="w3-ul"><li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors"</p></div></div></li>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors"</p></div></div></li>
             <li><font class="number">8.</font> Tamimi, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors", <font class="conferance"><font class="conferance">IEEE TC</font>AD</font>, 2018</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry"</p></div></div></li>
             <li><font class="number">9.</font> <font>B. Khaleghi</font>, H. Asadi, "A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry", <font class="conferance">IEEE TCAS-I</font>, 2018</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Aging-induced Approximations"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Aging-induced Approximations"</p></div></div></li>
             <li><font class="number">10.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Towards Aging-induced Approximations", <font class="conferance">DAC</font>, 2017 <font class="noted">(Best Paper Nomination)</font></li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era"</p></div></div></li>
             <li><font class="number">11.</font> Z. Seifouri, <font>B. Khaleghi</font>, H. Asadi, "A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era", <font class="conferance">DATE</font>, 2017</li>
           </ul>
-          <ul class="w3-ul"><li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Optimizing Temperature Guardbands"</p></div></div></li>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Optimizing Temperature Guardbands"</p></div></div></li>
             <li><font class="number">12.</font> H. Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Optimizing Temperature Guardbands", <font class="conferance"><font class="conferance">DATE</font></font>, 2017 <font class="noted">(Best Paper Nomination)</font></li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era"</p></div></div></li>
             <li><font class="number">13.</font> Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era", <font class="conferance">IEEE TC</font>, 2016</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays"</p></div></div></li>
             <li><font class="number">14.</font> S. Yazdanshenas, <font>B. Khaleghi</font>, P. Ienne, H. Asadi, "Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays", <font class="conferance">IEEE TVLSI</font>, 2016</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"TooT: An Efficient and Scalable Power-Gating Method for NoC Routers"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"TooT: An Efficient and Scalable Power-Gating Method for NoC Routers"</p></div></div></li>
             <li><font class="number">15.</font> H. Farrokhbakht, M. Taram, <font>B. Khaleghi</font>, Sh. Hessabi, "TooT: An Efficient and Scalable Power-Gating Method for NoC Routers", <font class="conferance">NOCS</font>, 2016</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs"</p></div></div></li>
             <li><font class="number">16.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs", <font class="conferance">FPL</font>, 2016</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Reliability-Aware Design to Suppress Aging Effects"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Reliability-Aware Design to Suppress Aging Effects"</p></div></div></li>
             <li><font class="number">17.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Reliability-Aware Design to Suppress Aging Effects", <font class="conferance">DAC</font>, 2016</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions"</p></div></div></li>
             <li><font class="number">18.</font> Ahmadpour, <font>B. Khaleghi</font>, H. Asadi, "An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions", <font class="conferance">FPL</font>, 2015</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices"</p></div></div></li>
             <li><font class="number">19.</font> S. Yazdanshenas, H. Asadi, <font>B. Khaleghi</font>, "A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices", <font class="conferance">IEEE TVLSI</font>, 2015</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic"</p></div></div></li>
             <li><font class="number">20.</font> <font>B. Khaleghi</font>, A. Ahari, H. Asadi, S. Bayat-Sarmadi, "FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic", <font class="conferance">IEEE ESL</font>, 2015</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design"</p></div></div></li>
             <li><font class="number">21.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, Z. Ebrahimi, M. B. Tahoori, "Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design", <font class="conferance">FPL</font>, 2014</li>
           </ul>
+
           <ul class="w3-ul">
-            <li><div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology"</p></div></div></li>
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology"</p></div></div></li>
             <li><font class="number">22.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, M. B. Tahoori, "A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology", <font class="conferance">DATE</font>, 2014</li>
           </ul>
       </div>
@@ -352,9 +423,9 @@
     </div>
   </div>
 
-    <script>
+  <script>
     function w3_open() {
-      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("main").style.marginLeft = "20%";
       document.getElementById("mySidebar").style.width = "220px";
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("openNav").style.display = 'none';
@@ -364,33 +435,33 @@
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("openNav").style.display = "inline-block";
     }
-      window.onscroll = function() {myFunction()};
+    window.onscroll = function() {myFunction()};
 
-      var header = document.getElementById("openNav");
-      var sticky = header.offsetTop;
+    var header = document.getElementById("openNav");
+    var sticky = header.offsetTop;
 
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          header.classList.add("sticky");
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
         } else {
-          header.classList.remove("sticky");
+          dropdownContent.style.display = "block";
         }
-      }
-      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-      var dropdown = document.getElementsByClassName("dropdown-btn");
-      var i;
-
-      for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var dropdownContent = this.nextElementSibling;
-          if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-          } else {
-            dropdownContent.style.display = "block";
-          }
-        });
-      }
-    </script>
+      });
+    }
+  </script>
   </body>
 </html>
