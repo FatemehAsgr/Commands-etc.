@@ -7,33 +7,56 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="keywords" content="Behnam Khaleghi, Behnam, Khaleghi, Tajana Šimunić Rosing, Tajana Rosing, Tajana, behnamkhaleghi, hardware, Electronic Design Automation, Reconfigurable Computing, Reconfigurable, Computing, Reliability, Hossein Asadi, Hossein, ISCA, DAC, Sharif, Sharif University, Sharif University Of technology, FPL, VLSI" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  .link{
-    color: #086DE7;
-    text-decoration: none;    }
-  font{
-    color: #880000;
-    font-weight: 550;
+  #openNav{
+    z-index: 100;
   }
-  .p{
-    color: black;
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+      display: none;
+      padding-left: 8px;
   }
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-    display: none;
-    padding-left: 8px;
-}
-.Research{
-  color: #34AA3A;
-  font-size: 16px;
-  font-weight: normal;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-    float: right;
-    padding-right: 8px;
-}
+  .conferance{
+    color: #34AA3A;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .dropdown {
+      position: relative;
+      background-color: #006A96;
+      color: #FFCD00;
+      font-size: 18px;
+      border-radius: 4px;
+      border: 3px;
+      cursor: context-menu;
+  }
+  .dropdown:hover{
+    background-color: #182B49;
+    color: #C69214;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      color: #252626;
+      min-width: 400px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .number{
+    color: #FFCD00;
+    text-shadow: 1px 1px #E1B900;
+  }
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+      float: right;
+      padding-right: 8px;
+  }
   .foot{
     font-size: 12px;
     margin-right: 10px;
@@ -71,7 +94,13 @@
     }
     .link{
       color: #086DE7;
-      text-decoration: none;    }
+      text-decoration: none;
+    }
+    .noted{
+      color: #D90000;
+      text-decoration: none;
+      text-shadow: 3px 3px #F2DCDC;
+    }
     #mySidebar{
       background-color: #2B2C2D;
     }
@@ -122,21 +151,19 @@
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
         margin-top: 0px;
-      }
-          .sidenav a, .dropdown-btn {
-              padding: 6px 8px 6px 16px;
-              text-decoration: none;
-              display: block;
-              border: none;
-              background: none;
-              width: 100%;
-              text-align: left;
-              cursor: pointer;
-              outline: none;
-              color: #C8C8C8;
           }
-
-
+    .sidenav a, .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      display: block;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+      color: #C8C8C8;
+      }
     h2{
       font-size: 40px;
       font-weight: 100;
@@ -170,6 +197,38 @@
     .sticky_header{
       background-color: #313131;
     }
+    font{
+      color: #880000;
+      font-weight: 550;
+    }
+    .Abstract{
+      background-color: #182B49;
+      color: #C69214;
+      border-radius: 3px;
+      height: 30px;
+      width: 70px;
+      z-index: 0;
+    }
+    ul{
+      display: flex;
+    }
+    .pdf{
+      margin-bottom: -10px;
+      margin-left: 8px;
+      margin-top: -12px;
+      color: #BD0600;
+      font-size: 14px;
+      cursor: context-menu;
+    }
+    .pdf:hover{
+      font-weight: bold;
+    }
+    .fa-file-pdf-o{
+      font-weight: bold;
+    }
+    a{
+      text-decoration: none;
+    }
   </style>
 </head>
 <title>Behnam Khaleghi</title>
@@ -200,65 +259,209 @@
         </div>
       </div>
       <div class="main">
-        <h2>Teaching and Work Experience</h2>
-        <hr class="hr">
-        <p><font class="research">Teaching Assistant</font></p>
-        <p><font class="Research">Computer Architecture</font> , Spring 2017</p>
-        <p><font class="Research">Reconfigurable Computing (Graduate Course)</font>, Spring 2015</p>
-        <p><font class="Research">Advanced VLSI Design (Graduate Course)</font>, Spring 2013</p>
-        <p><font class="Research">Computer Architecture</font>, Spring 2012</p>
-        <p><font class="Research">VLSI Design</font>, Spring 2012</p>
-        <p><font class="Research">Digital Systems Design</font> , Spring 2017</p>
-        <p><font class="Research">Logical Design</font>, Fall 2012</p>
-        <p><font class="Research">Developer at Sharif Advanced ICT Research Center</font>, Research related to Xilinx FPGAs architecture, Summer 2013</p>
-        <p><font class="Research">Intern at Sharif Advanced ICT Research Center</font>, Cloud Computing and Virtualization, Summer 2012</p>
-        <hr>
+        <div class="w3-container">
+          <h2>Publications</h2>
+          <hr class="hr">
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
+            <li><font class="number"> 1.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", <font class="conferance">IEEE TVLSI</font>, 2018</br></li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era"</p></div></div></li>
+            <li><font class="number">2.</font> Seifoori, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era", <font class="conferance">Book Chapter in Advances in Computers</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
+            <li><font class="number"> 3.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", <font class="conferance">IEEE TVLSI</font>, 2018</br></li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Voltage Adaptation under Temperature Variation"</p></div></div></li>
+            <li><font class="number">4.</font> Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Voltage Adaptation under Temperature Variation", <font class="conferance">SMACD</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks"</p></div></div></li>
+            <li><font class="number">5.</font> Yazdanbakhsh, M. Brzozowski, <font>B. Khaleghi</font>, S. Ghodrati, K. Samadi, N. S. Kim, H. Esmaeilzadeh, "FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks", <font class="conferance">FCCM</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics"</p></div></div></li>
+            <li><font class="number">6.</font> Sacks, <font>B. Khaleghi</font>, D. Mahajan, R. Lawson, H. Esmaeilzadeh, "RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics", <font class="conferance">ISCA</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Programmable Logic Design"</p></div></div></li>
+            <li><font class="number">7.</font> Asadi, Z. Ebrahimi, <font>B. Khaleghi</font>, "Programmable Logic Design", <font class="conferance">US Patent Application</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors"</p></div></div></li>
+            <li><font class="number">8.</font> Tamimi, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors", <font class="conferance"><font class="conferance">IEEE TC</font>AD</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry"</p></div></div></li>
+            <li><font class="number">9.</font> <font>B. Khaleghi</font>, H. Asadi, "A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry", <font class="conferance">IEEE TCAS-I</font>, 2018</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Aging-induced Approximations"</p></div></div></li>
+            <li><font class="number">10.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Towards Aging-induced Approximations", <font class="conferance">DAC</font>, 2017 <font class="noted">(Best Paper Nomination)</font></li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era"</p></div></div></li>
+            <li><font class="number">11.</font> Z. Seifouri, <font>B. Khaleghi</font>, H. Asadi, "A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era", <font class="conferance">DATE</font>, 2017</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Optimizing Temperature Guardbands"</p></div></div></li>
+            <li><font class="number">12.</font> H. Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Optimizing Temperature Guardbands", <font class="conferance"><font class="conferance">DATE</font></font>, 2017 <font class="noted">(Best Paper Nomination)</font></li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era"</p></div></div></li>
+            <li><font class="number">13.</font> Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era", <font class="conferance">IEEE TC</font>, 2016</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays"</p></div></div></li>
+            <li><font class="number">14.</font> S. Yazdanshenas, <font>B. Khaleghi</font>, P. Ienne, H. Asadi, "Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays", <font class="conferance">IEEE TVLSI</font>, 2016</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"TooT: An Efficient and Scalable Power-Gating Method for NoC Routers"</p></div></div></li>
+            <li><font class="number">15.</font> H. Farrokhbakht, M. Taram, <font>B. Khaleghi</font>, Sh. Hessabi, "TooT: An Efficient and Scalable Power-Gating Method for NoC Routers", <font class="conferance">NOCS</font>, 2016</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs"</p></div></div></li>
+            <li><font class="number">16.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs", <font class="conferance">FPL</font>, 2016</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Reliability-Aware Design to Suppress Aging Effects"</p></div></div></li>
+            <li><font class="number">17.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Reliability-Aware Design to Suppress Aging Effects", <font class="conferance">DAC</font>, 2016</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions"</p></div></div></li>
+            <li><font class="number">18.</font> Ahmadpour, <font>B. Khaleghi</font>, H. Asadi, "An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions", <font class="conferance">FPL</font>, 2015</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices"</p></div></div></li>
+            <li><font class="number">19.</font> S. Yazdanshenas, H. Asadi, <font>B. Khaleghi</font>, "A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices", <font class="conferance">IEEE TVLSI</font>, 2015</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic"</p></div></div></li>
+            <li><font class="number">20.</font> <font>B. Khaleghi</font>, A. Ahari, H. Asadi, S. Bayat-Sarmadi, "FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic", <font class="conferance">IEEE ESL</font>, 2015</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design"</p></div></div></li>
+            <li><font class="number">21.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, Z. Ebrahimi, M. B. Tahoori, "Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design", <font class="conferance">FPL</font>, 2014</li>
+          </ul>
+
+          <ul class="w3-ul">
+            <li>
+              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology"</p></div></div></li>
+            <li><font class="number">22.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, M. B. Tahoori, "A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology", <font class="conferance">DATE</font>, 2014</li>
+          </ul>
       </div>
-    <div class="footer container-lg px-3" role="contentinfo" id="footer">
-      <div class="text-black">
-        With &#9829; by Fatemeh, October 2018
-      </div>
+  </div>
+  <div class="footer container-lg px-3" role="contentinfo" id="footer">
+    <div class="text-black">
+      With &#9829; by Fatemeh, October 2018
     </div>
-</div>
-<script>
-  function w3_open() {
-    document.getElementById("main").style.marginLeft = "20%";
-    document.getElementById("mySidebar").style.width = "220px";
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("openNav").style.display = 'none';
-  }
-  function w3_close() {
-    document.getElementById("main").style.marginLeft = "0%";
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("openNav").style.display = "inline-block";
-  }
-  window.onscroll = function() {myFunction()};
+  </div>
 
-  var header = document.getElementById("openNav");
-  var sticky = header.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "20%";
+      document.getElementById("mySidebar").style.width = "220px";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
     }
-  }
-  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    window.onscroll = function() {myFunction()};
 
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var dropdownContent = this.nextElementSibling;
-      if (dropdownContent.style.display === "block") {
-        dropdownContent.style.display = "none";
+    var header = document.getElementById("openNav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
       } else {
-        dropdownContent.style.display = "block";
+        header.classList.remove("sticky");
       }
-    });
-  }
-</script>
+    }
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
   </body>
 </html>
