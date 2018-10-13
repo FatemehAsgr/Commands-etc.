@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/path/to/folder/css/academicons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -363,20 +365,23 @@
   <body onload="main_function()">
     <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:block" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()" style="color: red; size: 24px;"> &larr;</button>
+      onclick="w3_close()"> <i class="fa fa-angle-double-left" style="font-size:48px;color:#B30909;"></i><br></button>
       <img src="https://media.licdn.com/dms/image/C5603AQFgsZgt3WhBow/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=uGWKnVZGlHuJ4Eqrn3GzmhFZ1TNKTPVaFCy5a_Z9zEc" alt="Behnam">
       <div id="menu_items">
         <a href="../Behnam/behnamkhaleghi.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
         <a href="../Behnam/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
         <a href="../Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
-        <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-mortar-board"></i> | CV</a>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar-square ai-1.5x"></i> | Google Scholar</a>
+        <button id="menu" class="dropdown-btn"><i class="fa fa-mortar-board"></i> | CV <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+          <a href="../Behnam/Behnam_CompactCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-file-text-o"></i> | Compact</a>
+          <a href="../Behnam/Behnam_DetailedCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-book"></i> | Detailed</a></div>
+        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar"></i> | Google Scholar</a>
         <a href="../Behnam/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
-          <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu"><i class="material-icons" style="font-size:16px">email</i> | Email</a>
-          <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-linkedin-square"></i> | Linkedin</a>
-        </div>
+          <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="material-icons" style="font-size:16px">email</i> | Email</a>
+          <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-linkedin-square"></i> | Linkedin</a>        </div>
+      </div>
       </div>
     </div>
       <div class="main">
@@ -390,19 +395,20 @@
           <h2>Behnam Khaleghi</h2>
           <p class="address"><font style="font-weight: 500; color=black;">PhD student</font></br>Computer Science and Engineering Department</br>University of California San Diego
           </br>Phone : (619) 416-9819</br><i class="fa fa-envelope"></i> : bkhaleghi (AT) ucsd.com
-          </br>9500 Gilman Dr, CA, 92093</br>Bldg EBU3 (CSE), Room 2142
+          </br>9500 Gilman Dr, CA, 92093</br>Bldg EBU3 (CSE), Room 2140
           </p>
           <hr class="hr">
           <p>I'm a second year PhD student in Department of Computer Science and Engineering (<a class="link" href="https://cse.ucsd.edu">CSE</a>) at the University of California San Diego (<a class="link" href="https://www.ucsd.edu">UCSD</a>) under supervision of Professor <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Tajana Rosing</a>.
              I received my M.S. and B.Sc degrees from the School of Computer Engineering (<a class="link" href="http://ce.sharif.ir">CE</a>) at <a class="link" href="http://www.en.sharif.edu">Sharif University of technology</a>, under supervision of Professor <a class="link" href="http://sharif.edu/~asadi/">Hossein Asadi</a>, in 2013 and 2016 respectively. My research interests are Electronic Design Automation, Reconfigurable Computing and Reliability.
           </p>
-          <p>Here's my <a class="link" href="http://ce.sharif.edu/~behnam_khaleghi/"><i class="fa fa-mortar-board"></i>CV</a> and <a class="link" href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><i class="ai ai-google-scholar-square"></i> Google Scholar</a>.</</p>
+          <p>Here's my <a class="link" href=""><i class="fa fa-mortar-board"></i>CV</a>, <a class="link" href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><i class="ai ai-google-scholar"></i></i>Google Scholar</a> and
+            <a class="link" href="https://dblp.org/pers/hd/k/Khaleghi:Behnam"><i class="ai ai-dblp ai-1.5x"></i>dblp</a>.</p>
         </div>
       </div>
     </div>
     <div class="footer container-lg px-3" role="contentinfo" id="footer">
       <div class="text-black">
-        Designed with &#9829; by Fatemeh, Last update: October 2018
+        Designed by Fatemeh - Last update: October 2018
       </div>
     </div>
     <script>
