@@ -380,22 +380,25 @@
 <title>Behnam Khaleghi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <body>
+  <body onload="main_function()">
     <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()" style="color: red; size: 24px;"> &larr;</button>
+      onclick="w3_close()"> <i class="fa fa-angle-double-left" style="font-size:48px;color:#B30909;"></i><br></button>
       <img src="https://media.licdn.com/dms/image/C5603AQFgsZgt3WhBow/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=uGWKnVZGlHuJ4Eqrn3GzmhFZ1TNKTPVaFCy5a_Z9zEc" alt="Behnam">
       <div id="menu_items">
         <a href="../Behnam/behnamkhaleghi.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
         <a href="../Behnam/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
         <a href="../Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
-        <a href="http://ce.sharif.edu/~behnam_khaleghi/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-mortar-board"></i> | CV</a>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar-square ai-1.5x"></i> | Google Scholar</a>
+        <button id="menu" class="dropdown-btn"><i class="fa fa-mortar-board"></i> | CV <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-container">
+          <a href="../Behnam/Behnam_CompactCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-file-text-o"></i> | Compact</a>
+          <a href="../Behnam/Behnam_DetailedCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-book"></i> | Detailed</a></div>
+        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar"></i> | Google Scholar</a>
         <a href="../Behnam/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
-          <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu"><i class="material-icons" style="font-size:16px">email</i> | Email</a>
-          <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu"><i class="fa fa-linkedin-square"></i> | Linkedin</a>        </div>
+          <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="material-icons" style="font-size:16px">email</i> | Email</a>
+          <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-linkedin-square"></i> | Linkedin</a>        </div>
       </div>
     </div>
     <div id="main">
@@ -421,7 +424,7 @@
       </div>
     <div class="footer container-lg px-3" role="contentinfo" id="footer">
       <div class="text-black">
-        Designed with &#9829; by Fatemeh, Last update: October 2018
+        Designed by Fatemeh - Last update: October 2018
       </div>
     </div>
 </div>
@@ -448,6 +451,12 @@
     } else {
       header.classList.remove("sticky");
     }
+  }
+  function main_function() {
+    document.getElementById("main").style.marginLeft = "20%";
+    document.getElementById("mySidebar").style.width = "220px";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
   }
   /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
   var dropdown = document.getElementsByClassName("dropdown-btn");
