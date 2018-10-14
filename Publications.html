@@ -44,7 +44,7 @@
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       padding: 12px 16px;
       z-index: 1;
-      font-size: 14px;
+      font-size: 13px;
   }
   .dropdown:hover .dropdown-content {
       display: block;
@@ -202,6 +202,7 @@
       margin-left: 10px;
       margin-right: 10px;
       background-color: #3A3A3A;
+      font-size: 14px;
     }
     .sticky_header{
       background-color: #313131;
@@ -421,24 +422,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <body onload="main_function()">
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:block" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()"> <i class="fa fa-angle-double-left" style="font-size:48px;color:#B30909;"></i><br></button>
+      onclick="w3_close()"> <i class="fa fa-long-arrow-left" style="font-size:36px; color:#BB2B15;"></i><br></button>
       <img src="https://media.licdn.com/dms/image/C5603AQFgsZgt3WhBow/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=uGWKnVZGlHuJ4Eqrn3GzmhFZ1TNKTPVaFCy5a_Z9zEc" alt="Behnam">
       <div id="menu_items">
-        <a href="../Behnam/behnamkhaleghi.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
-        <a href="../Behnam/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
-        <a href="../Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
+        <a href="../Site/index.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
+        <a href="../Site/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
+        <a href="../Site/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
+        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar"></i> | Google Scholar</a>
+        <a href="../Site/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work</a>
+        <a href="../Site/Honors.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-trophy"></i> | Honors and Awards</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-mortar-board"></i> | CV <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
-          <a href="../Behnam/Behnam_CompactCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-file-text-o"></i> | Compact</a>
-          <a href="../Behnam/Behnam_DetailedCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-book"></i> | Detailed</a></div>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar"></i> | Google Scholar</a>
-        <a href="../Behnam/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
+          <a href="../Site/Behnam_CompactCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-file-text-o"></i> | Compact</a>
+          <a href="../Site/Behnam_DetailedCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-book"></i> | Detailed</a>
+        </div>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
           <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="material-icons" style="font-size:16px">email</i> | Email</a>
           <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-linkedin-square"></i> | Linkedin</a>        </div>
+      </div>
       </div>
     </div>
     <div id="main">
@@ -453,162 +457,298 @@
           <hr class="hr">
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
-            <li><font class="number"> 1.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", <font class="conferance">IEEE TVLSI</font>, 2018</br></li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/DSN-Uploads-Sep-18/Behnam-TVLSI-18-aging-effect.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>In this paper, we present a comprehensive analysis of the impact of aging on the interconnection network of Field-Programmable Gate Arrays (FPGAs) and propose novel approaches to mitigate aging effects on the routing network.
+			  We first show the insignificant impact of aging on data integrity of FPGAs, i.e., Static Noise Margin (SNM) and Soft Error Rate (SER) of the configuration cells, as well as we show the negligible impact of the mentioned degradations on the FPGA performance.
+			  As such, we focus on performance degradation of datapath transistors.
+			  In this regard, we propose a routing accompanied by a placement algorithm that prevent constant stress on transistors by evenly distributing the stress through the interconnection resources.
+			  By observing the impact of the signal probability on the aging of routing buffers, we enhance the synthesis flow as well as augment the proposed routing algorithm to converge the signal probabilities towards aging-friendly values.
+			  Experimental results over a set of industrial benchmarks and commercial-like FPGA architecture indicate the effectiveness of the proposed method with 64.3% reduction of stress duration in multiplexers and up to 45.2% improvement of the degradation of buffers.
+			  Altogether, the proposed method reduces the timing guardband by from 14.1% to 31.7%, depending on the FPGA routing architecture.</p></div></div></li>
+            <li><font class="number"> 1.</font> <font>B. Khaleghi</font>, B. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", to be appear in <font class="conferance">IEEE TVLSI</font>, 2018.</br></li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era"</p></div></div></li>
-            <li><font class="number">2.</font> Seifoori, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era", <font class="conferance">Book Chapter in Advances in Computers</font>, 2018</li>
+              <p><a href="https://www.elsevier.com/books/dark-silicon-and-future-on-chip-systems/hurson/978-0-12-815358-1"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>The increased leakage power of deep-nano technologies in the one hand, and exponential growth in the number of transistors in a given die particularly in Field Programmable Gate Arrays (FPGAs) have resulted in an intensified rate of static power dissipation as well as power density.
+			  This ever-increasing static power consumption acts as a power wall to further integration of transistors and has caused the breakdown of Dennard scaling.
+			  To meet the available power budget and preclude reliability challenges associated with high power density, designers are obligated to restrict the active percentage of the chip by powering off a selective fraction of silicon die, referred to as Dark Silicon.
+			  Several promising architectures have been proposed to enhance the static power and energy efficiency in FPGAs.
+			  The main approach in the majority of suggested architectures includes applying power gating to unused logic and routing resources and/or designing power-efficient logic and routing elements such as Reconfigurable Hard Logics as an alternative for conventional Look-up Tables.
+			  This study represents a survey on evolution of SRAM-based FPGA architectures toward the era of dark silicon.</p></div></div></li>
+            <li><font class="number">2.</font> Z. Seifoori, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "Dark Silicon and Future On-chip Systems: Emerging SRAM-based FPGA Architectures in Dark Silicon Era", Book Chapter in <font class="conferance">Advances in Computers</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Estimating and Mitigating Aging Effects in Routing Network of FPGAs"</p></div></div></li>
-            <li><font class="number"> 3.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Estimating and Mitigating Aging Effects in Routing Network of FPGAs", <font class="conferance">IEEE TVLSI</font>, 2018</br></li>
+              <p><a href="https://ieeexplore.ieee.org/abstract/document/8434855"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>The maximum delay of a processor is subject to both temperature (T) and voltage (V) jointly.
+				Therefore, there is the prospect of reducing V at runtime whenever T is below the worst-case temperature without violating the predetermined timing constraints, instead of employing throughout a conservative V that corresponds to Tworst.
+				Hence, the efficiency can be maximized, while still accounting for temperature variation at runtime, without sacrificing reliability.
+				In this work, we focus on the key challenge of how the small, yet sufficient voltage can be accurately, at design time, obtained in which timing constraints at runtime are assuredly fulfilled.
+				To achieve that, we model the delay of processor under the joint effects of T and V through creating cell libraries that contain the detailed delay information of cells at a wide variety of T and V cases.
+				Libraries are compatible with commercial EDA tools.
+				Hence, standard tool flows, even though they were not designed for that purpose, can be employed to seamlessly obtain the correlation between T and V in any circuit regardless its complexity.
+				After modeling of the correlation between T and V from the physical level to circuit level, we implement at the system level a temperature-guided voltage adaptation technique that tunes the voltage at runtime following temperature variations leading to a considerable reduction in power.</p></div></div></li>
+            <li><font class="number">3.</font> H. Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Voltage Adaptation under Temperature Variation", <font class="conferance">SMACD</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Voltage Adaptation under Temperature Variation"</p></div></div></li>
-            <li><font class="number">4.</font> Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Voltage Adaptation under Temperature Variation", <font class="conferance">SMACD</font>, 2018</li>
+              <p><a href="https://www.cc.gatech.edu/~ayazdanb/publication/papers/flexigan-fccm18.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Generative Adversarial Networks (GANs) are a frontier in deep learning.
+				GANs consist of two models: generative and discriminative.
+				While the discriminative model uses the conventional convolution, the generative model depends on a fundamentally different operator, called transposed convolution.
+				This operator initially inserts a large number of zeros in its input and then slides a window over this expanded input.
+				This zero-insertion step leads to a large number of ineffectual operations and creates distinct patterns of computation across the sliding windows.
+				The ineffectual operations along with the variation in computation patterns lead to significant resource underutilization when using conventional convolution hardware.
+				To alleviate these sources of inefficiency, this paper devises FlexiGAN, an end-to-end solution, that generates an optimized synthesizable FPGA accelerator from a high-level GAN specification.
+				FlexiGAN is coupled with a novel template architecture that aims to harness the benefits of both MIMD and SIMD execution models to avoid ineffectual operations.
+				To this end, the proposed architecture separates data retrieval and data processing units at the finest granularity of each compute engine.
+				Leveraging this separation enables the architecture to use a succinct set of operations to cope with the irregularities of transposed convolution.
+				At the same time, it significantly reduces the on-chip memory usage, which is generally limited in FPGAs.
+				We evaluate our end-to-end solution by generating FPGA accelerators for a variety of GANs.
+				These generated accelerators provide 2.4× higher performance than an optimized conventional convolution design.
+				In addition, FlexiGAN, on average, yields 2.8× (up to 3.7×) improvements in Performance-per-Watt over a Titan X GPU.</p></div></div></li>
+            <li><font class="number">4.</font> A. Yazdanbakhsh, M. Brzozowski, <font>B. Khaleghi</font>, S. Ghodrati, K. Samadi, N. S. Kim, H. Esmaeilzadeh, "FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks", <font class="conferance">FCCM</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks"</p></div></div></li>
-            <li><font class="number">5.</font> Yazdanbakhsh, M. Brzozowski, <font>B. Khaleghi</font>, S. Ghodrati, K. Samadi, N. S. Kim, H. Esmaeilzadeh, "FlexiGAN: An End-to-End Solution for FPGA Acceleration of Generative Adversarial Networks", <font class="conferance">FCCM</font>, 2018</li>
+              <p><a href="https://www.cc.gatech.edu/~hadi/doc/paper/2018-isca-robox-old.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Novel algorithmic advances have paved the way for robotics to transform the dynamics of many social and enterprise applications.
+				To achieve true autonomy, robots need to continuously process and interact with their environment through computationally-intensive motion planning and control algorithms under a low power budget.
+				Specialized architectures offer a potent choice to provide low-power, high-performance accelerators for these algorithms.
+				Instead of taking a traditional route which profiles and maps hot code regions to accelerators, this paper delves into the algorithmic characteristics of the application domain.
+				We observe that many motion planning and control algorithms are formulated as a constrained optimization problems solved online through Model Predictive Control (MPC).
+				While models and objective functions differ between robotic systems and tasks, the structure of the optimization problem and solver remain fixed.
+				Using this theoretical insight, we create RoboX, an end-to-end solution which exposes a high-level domain-specific language to roboticists.
+				This interface allows roboticists to express the physics of the robot and its task in a form close to its concise mathematical expressions.
+				The RoboX backend then automatically maps this high-level specification to a novel programmable architecture, which harbors a programmable memory access engine and compute-enabled interconnects.
+				Hops in the interconnect are augmented with simple functional units that either operate on in-fight data or are bypassed according a micro-program.
+				Evaluations with six different robotic systems and tasks show that RoboX provides a 29.4× (7.3×) speedup and 22.1× (79.4×) performance-per-watt improvement over an ARM Cortex A57 (Intel Xeon E3).
+				Compared to GPUs, RoboX attains 7.8×, 65.5×, and 71.8× higher Performance-per-Watt to Tegra X2, GTX 650 Ti, and Tesla K40 with a power envelope of only 3.4 Watts at 45 nm.</p></div></div></li>
+            <li><font class="number">5.</font> J. Sacks, D. Mahajan, R. Lawson, <font>B. Khaleghi</font>, H. Esmaeilzadeh, "RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics", <font class="conferance">ISCA</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics"</p></div></div></li>
-            <li><font class="number">6.</font> Sacks, <font>B. Khaleghi</font>, D. Mahajan, R. Lawson, H. Esmaeilzadeh, "RoboX: An End-to-End Solution to Accelerate Autonomous Control in Robotics", <font class="conferance">ISCA</font>, 2018</li>
+              <p><a href="https://patentimages.storage.googleapis.com/9d/17/fb/c854d8dcc1c91f/US20180175862A1.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>A programmable logic unit (PLU). The PLU includes a plurality of four-input reconfigurable hard logics (RHLs), a three-input look-up-table (LUT), and a plurality of reconfigurable inverters.
+			  The plurality of RHLs include a first RHL, a second RHL, and a third RHL. The plurality of reconfigurable inverters are associated with the plurality of RHLs.</p></div></div></li>
+            <li><font class="number">6.</font> H. Asadi, Z. Ebrahimi, <font>B. Khaleghi</font>, "Programmable Logic Design", <font class="conferance">US Patent Application</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Programmable Logic Design"</p></div></div></li>
-            <li><font class="number">7.</font> Asadi, Z. Ebrahimi, <font>B. Khaleghi</font>, "Programmable Logic Design", <font class="conferance">US Patent Application</font>, 2018</li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/DSN-Uploads-June-18/Tamimi.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Nowadays, embedded processors are widely used in wide range of domains from low-power to safety-critical applications.
+			  By providing prominent features such as variant peripheral support and flexibility to partial or major design modifications, Field-Programmable Gate Arrays (FPGAs) are commonly used to implement either an entire embedded system or a Hardware Description Language (HDL)-based processor, known as soft-core processor.
+			  FPGA-based designs, however, suffer from high power consumption, large die area, and low performance that hinders common use of soft-core processors in low-power embedded systems.
+			  In this paper, we present an efficient reconfigurable architecture to implement soft-core embedded processors in SRAM-based FPGAs by using characteristics such as low utilization and fragmented accessibility of comprising units.
+			  To this end, we integrate the low utilized functional units into efficiently designed Look-Up Table (LUT) based Reconfigurable Units (RUs).
+			  To further improve the efficiency of the proposed architecture, we used a set of efficient Configurable Hard Logics (CHLs) that implement frequent Boolean functions while the other functions will still be employed by LUTs.
+			  We have evaluated effectiveness of the proposed architecture by implementing the Berkeley RISC-V processor and running MiBench benchmarks.
+			  We have also examined the applicability of the proposed architecture on an alternative open-source processor (i.e., LEON2) and a Digital Signal Processing (DSP) core.
+			  Experimental results show that the proposed architecture as compared to the conventional LUT-based soft-core processors improves area footprint, static power, energy consumption, and total execution time by 30.7%, 32.5%, 36.9%, and 6.3%, respectively.</p></div></div></li>
+            <li><font class="number">7.</font> S. Tamimi, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors", <font class="conferance"><font class="conferance">IEEE TC</font>AD</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors"</p></div></div></li>
-            <li><font class="number">8.</font> Tamimi, Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "An Efficient SRAM-based Reconfigurable Architecture for Embedded Processors", <font class="conferance"><font class="conferance">IEEE TC</font>AD</font>, 2018</li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/DSN-Uploads-March-18/Behnam-RRAM-18.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Despite the considerable effort has been put on the application of Non-Volatile Memories (NVMs) in Field-Programmable Gate Arrays FPGAs, previously suggested designs are not mature enough to substitute the state of-the-art SRAM-based counterparts mainly due to the inefficient building blocks and/or the overhead of programming structure which can impair their potential benefits.
+			  In this paper, we present a Resistive Random Access Memory RRAM-based FPGA architecture employing efficient Switch Box (SB) and Look-Up Table (LUT) designs with programming circuitry integrated in both SB and LUT designs that creates area and power efficient programmable components while precluding performance overhead to these blocks.
+			  In addition, we present an efficient scheme to load the configuration bitstream into the memory elements, which makes the configuration time comparable to that of SRAM-based FPGAs.
+			  Besides, we investigate the correct functionality and reliability of the programming structure subject to fluctuations in attributes of RRAM cells.
+			  Using Versatile Place and Route (VTR) tool with the obtained characteristics of the proposed blocks demonstrate that the average area and delay of the proposed FPGA architecture are 59.4% and 20.1% less than conventional SRAM-based FPGAs. Compared with a recent RRAM-based architecture, the proposed architecture improves the area and power by 49.7% and 33.8% while keeps the delay intact.</p></div></div></li>
+            <li><font class="number">8.</font> <font>B. Khaleghi</font>, H. Asadi, "A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry", <font class="conferance">IEEE TCAS-I</font>, 2018.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry"</p></div></div></li>
-            <li><font class="number">9.</font> <font>B. Khaleghi</font>, H. Asadi, "A Resistive RAM-Based FPGA Architecture Equipped with Efficient Programming Circuitry", <font class="conferance">IEEE TCAS-I</font>, 2018</li>
+              <p><a href="http://users.ece.utexas.edu/~gerstl/publications/dac17.aging.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>In recent technology nodes, wide guardbands are needed to overcome reliability degradations due to aging.
+			  Such guardbands manifest as reduced efficiency and performance.
+			  Existing approaches to reduce guardbands trade off aging impact for increased circuit overhead.
+			  By contrast, the goal of this work is to completely remove guardbands through exploring, for the first time, application of approximate computing principles in the context of aging.
+			  As a result of naively narrowing or removing guardbands, timing errors start to appear as transistors age.
+			  We demonstrate that even in circuits that may tolerate errors, aging can be catastrophic due to unacceptable quality loss.
+			  Furthermore, quantifying such aging-induced quality loss necessitates expensive (often infeasible) gate-level simulations of the complete design.
+			  We show how nondeterministic aginginduced timing errors can be converted into deterministic and controlled approximations instead.
+			  We first translate the required guardband over time into an equivalent reduction in precision for individual RTL components.
+			  We then demonstrate how, based on pre-characterization of RTL components, we can quantify aging-induced approximation at the whole microarchitecture level without the need for further gate-level simulations.
+			  Results show that a 3 bit reduction in precision is sufficient to sustain 10 years of operation under worst-case aging in the context of an image processing circuit.
+			  This corresponds to an acceptable PSNR reduction of merely 8 dB, while at the same time increasing area and energy efficiency by 13%.</p></div></div></li>
+            <li><font class="number">9.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Towards Aging-induced Approximations", <font class="conferance">DAC</font>, 2017. <font class="noted">(Best Paper Nomination)</font></li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Aging-induced Approximations"</p></div></div></li>
-            <li><font class="number">10.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Towards Aging-induced Approximations", <font class="conferance">DAC</font>, 2017 <font class="noted">(Best Paper Nomination)</font></li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/DSN-Uploads-May-18/Seifoori-PESA.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Continuous down scaling of CMOS technology in recent years has resulted in exponential increase in static power consumption which acts as a power wall for further transistor integration.
+			  One promising approach to throttle the substantial static power of Field-Programmable Gate Array (FPGAs) is to power off unused routing resources such as switch boxes, known as dark silicon.
+			  In this paper, we present a Power gating Switch Box Architecture (PESA) for routing network of SRAM-based FPGAs to overcome the obstacle for further device integration.
+			  In the proposed architecture, by exploring various patterns of used multiplexers in switch boxes, we employ a configurable controller to turn off unused resources in the routing network.
+			  Our study shows that due to the significant percentage of unused switches in the routing network, PESA is able to considerably improve power efficiency in SRAM-based FPGAs.
+			  Experimental results carried out on different benchmarks using VPR toolset show that PESA decreases power consumption of the routing network up to 75% as compared to the conventional architectures while preserving the performance intact.</p></div></div></li>
+            <li><font class="number">10.</font> Z. Seifouri, <font>B. Khaleghi</font>, H. Asadi, "A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era", <font class="conferance">DATE</font>, 2017.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era"</p></div></div></li>
-            <li><font class="number">11.</font> Z. Seifouri, <font>B. Khaleghi</font>, H. Asadi, "A Power Gating Switch Box Architecture in Routing Network of SRAM-Based FPGAs in Dark Silicon Era", <font class="conferance">DATE</font>, 2017</li>
+              <p><a href="https://ieeexplore.ieee.org/document/7926978"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>We introduce the first temperature guardbands optimization based on thermal-aware logic synthesis and thermal-aware timing analysis.
+			  The optimized guardbands are obtained solely due to using our so-called thermal-aware cell libraries together with existing tool flows and not due to sacrificing timing constraints (i.e. no trade-offs).
+			  We demonstrate that temperature guardbands can be optimized at design time through thermal-aware logic synthesis in which more resilient circuits against worst-case temperatures are obtained.
+			  Our static guardband optimization leads to 18% smaller guardbands on average. We also demonstrate that thermal-aware timing analysis enables designers to accurately estimate the required guardbands for a wide range of temperatures without over/under-estimations.
+			  Therefore, temperature guardbands can be optimized at operation time through employing the small, yet sufficient guardband that corresponds to the current temperature rather than employing throughout a conservative guardband that corresponds to the worst-case temperature.
+			  Our adaptive guardband optimization results, on average, in a 22% higher performance along with 9 2% less energy. Neither thermal-aware logic synthesis nor thermal-aware timing analysis would be possible without our thermal-aware cell libraries.
+			  They are compatible with use of existing commercial tools. Hence, they allow designers, for the first time, to automatically consider thermal concerns within their design tool flows even if they were not designed for that purpose.</p></div></div></li>
+            <li><font class="number">11.</font> H. Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Optimizing Temperature Guardbands", <font class="conferance"><font class="conferance">DATE</font></font>, 2017. <font class="noted">(Best Paper Nomination)</font></li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Optimizing Temperature Guardbands"</p></div></div></li>
-            <li><font class="number">12.</font> H. Amrouch, <font>B. Khaleghi</font>, J. Henkel, "Optimizing Temperature Guardbands", <font class="conferance"><font class="conferance">DATE</font></font>, 2017 <font class="noted">(Best Paper Nomination)</font></li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/DSN-Uploads-June-18/Ebrahimi.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Significant increase of static power in nano-CMOS era and, subsequently, the end of Dennard scaling has put a Power Wall to further integration of CMOS technology in Field-Programmable Gate Arrays (FPGAs).
+			  An efficient solution to cope with this obstacle is power gating inactive fractions of a single die, resulting in Dark Silicon.
+			  Previous studies employing power gating on SRAM-based FPGAs have primarily focused on using large-input Look-up Tables (LUTs).
+			  The architectures proposed in such studies inherently suffer from poor logic utilization which limits the benefits of power gating techniques.
+			  This paper proposes a Power-Efficient Architecture for FPGAs (PEAF) based on combination of Reconfigurable Hard Logics (RHLs) and a small-input LUT.
+			  In the proposed architecture, we selectively turn off unused RHLs and/or LUTs within each logic block by employing a reconfigurable controller.
+			  By mapping a majority of logic functions to simple-design RHLs, PEAF is able to significantly improve power efficiency without deteriorating the performance.
+			  Experimental results over a comprehensive set of benchmarks (MCNC, IWLS'05, and VTR) demonstrate that compared with baseline four-LUT architecture, PEAF reduces the total static power and Power-Delay-Product (PDP), on average, by 24.5% and 21.7%, respectively.
+			  This is while the overall system performance is also improved by 1.8%. PEAF increases total area by 18.9%, however, it still occupies 22.1% less area footprint than the six-LUT architecture with 31.5% improvement in PDP.</p></div></div></li>
+            <li><font class="number">12.</font> Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era", <font class="conferance">IEEE TC</font>, 2016.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era"</p></div></div></li>
-            <li><font class="number">13.</font> Z. Ebrahimi, <font>B. Khaleghi</font>, H. Asadi, "PEAF: A Power-Efficient Architecture for SRAM-Based FPGAs Using Reconfigurable Hard Logic Design in Dark Silicon Era", <font class="conferance">IEEE TC</font>, 2016</li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/8-oct/main.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Nanoelectromechanical (NEM) relays are a promising emerging technology that has gained widespread research attention due to its zero leakage current, sharp ON-OFF transitions, and complementary metal-oxide-semiconductor compatibility.
+			  As a result, NEM relays have been significantly investigated as highly energy-efficient design solutions.
+			  A major shortcoming of NEMs preventing their widespread use is their limited switching endurance. Hence, in order to utilize the low-power advantages of NEM relays, further device, circuit, and architectural techniques are required.
+			  In this paper, we introduce the concept of shadow NEM relays, which is a circuit-level technique to leverage the energy efficiency of the NEM relays despite their low switching endurance.
+			  This technique creates two virtual ground nodes in a block to allow: 1) a low power mode with functional NEM relays and 2) a normal mode with failed NEM relays.
+			  To demonstrate the applicability of this concept, we have applied it to a six-transistor SRAM cell as an illustrative example.
+			  We also investigate the applicability of this SRAM cell in field-programmable gate arrays and on-chip caches.
+			  Experimental results reveal that shadow NEM relays can reduce the power consumption of SRAM cells by up to 80% while addressing the limited switching endurance of NEM relays.</p></div></div></li>
+            <li><font class="number">13.</font> S. Yazdanshenas, <font>B. Khaleghi</font>, P. Ienne, H. Asadi, "Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays", <font class="conferance">IEEE TVLSI</font>, 2016.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays"</p></div></div></li>
-            <li><font class="number">14.</font> S. Yazdanshenas, <font>B. Khaleghi</font>, P. Ienne, H. Asadi, "Designing Low Power and Durable Digital Blocks Using Shadow Nano-Electromechanical Relays", <font class="conferance">IEEE TVLSI</font>, 2016</li>
+              <p><a href="http://cseweb.ucsd.edu/~mtaram/toot.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"With the advent in technology and shrinking the transistor size down to nano scale, static power may become the dominant power component in Networks-on-Chip (NoCs).
+			  Powergating is an efficient technique to reduce the static power of under-utilized resources in different types of circuits.
+			  For NoC, routers are promising candidates for power gating, since they present high idle time. However, routers in a NoC are not usually idle for long consecutive cycles due to distribution of resources in NoC and its communication-based nature, even in low network utilizations.
+			  Therefore, power-gating loses its efficiency due to performance and power overhead of the packets that encounter powered-off routers.
+			  In this paper, we propose Turn-on on Turn (TooT) which reduces the number of wake-ups by leveraging the characteristics of deterministic routing algorithms and mesh topology.
+			  In the proposed method, we avoid powering a router on when it forwards a straight packet or ejects a packet, i.e., a router is powered on only when either a packet turns through it or its associated node injects a packet.
+			  Experimental results on PARSEC benchmarks demonstrate that, compared with the conventional power-gating, the proposed method improves static power and performance by 57.9% and 35.3%, respectively, at the cost of a negligible area overhead."</p></div></div></li>
+            <li><font class="number">14.</font> H. Farrokhbakht, M. Taram, <font>B. Khaleghi</font>, Sh. Hessabi, "TooT: An Efficient and Scalable Power-Gating Method for NoC Routers", <font class="conferance">NOCS</font>, 2016.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"TooT: An Efficient and Scalable Power-Gating Method for NoC Routers"</p></div></div></li>
-            <li><font class="number">15.</font> H. Farrokhbakht, M. Taram, <font>B. Khaleghi</font>, Sh. Hessabi, "TooT: An Efficient and Scalable Power-Gating Method for NoC Routers", <font class="conferance">NOCS</font>, 2016</li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/8-oct/fpl-16-camera-2.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Continuous shrinking of transistor size to provide high computation capability along with low power consumption has been accompanied by reliability degradations due to e.g., aging phenomenon.
+			  In this regard, with huge number of configuration bits, Field-Programmable Gate Arrays (FPGAs) are more susceptible to aging since aging not only degrades the performance, it may additionally result in corrupting the configuration cells and thus causing permanent circuit malfunctioning.
+			  While several works have investigated the aging effects in Look-Up Tables (LUTs), the routing fabric of these devices is seldom studied - even though it contributes to the majority of FPGAs' resources and configuration bits.
+			  Furthermore, there is a high prospect that errors in its state to propagate to the device outputs. In this paper, we first investigate aging effects in the routing fabric of FPGAs with respect to performance and reliability degradations.
+			  Based on this investigation, we enhance the conventional routing algorithm to mitigate the impact of aging by increasing the recovery time (i.e., the mechanism used to heal aging-induced defects) of transistors used in the routing resources.
+			  We examine our proposed method as reduction in stress time and required guardband to protect against aging in the routing fabric, as well as in improving the FPGA's lifetime. Our experiments show that the proposed method reduces the average stress time and aging-induced delay of routing resources by 41% and 18.3%, respectively.
+			  This, in turn, leads to improving the device lifetime by 130% compared to baseline routing.
+			  The proposed method can be applied by simple amending of conventional routing algorithms. Thus, it incurs negligible delay overhead.</p></div></div></li>
+            <li><font class="number">15.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs", <font class="conferance">FPL</font>, 2016.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs"</p></div></div></li>
-            <li><font class="number">16.</font> <font>Khaleghi, B</font>. Omidi, H. Amrouch, J. Henkel, H. Asadi, "Stress-Aware Routing to Mitigate Aging Effects in SRAM-based FPGAs", <font class="conferance">FPL</font>, 2016</li>
+              <p><a href="http://users.ece.utexas.edu/~gerstl/publications/dac16.aging.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Due to aging, circuit reliability has become extraordinary challenging.
+			  Reliability-aware circuit design flows do virtually not exist and even research is in its infancy.
+			  In this paper, we propose to bring aging awareness to EDA tool flows based on so-called degradation-aware cell libraries.
+			  These libraries include detailed delay information of gates/cells under the impact that aging has on both threshold voltage (Vth) and carrier mobility (μ) of transistors.
+			  This is unlike state of the art which considers V th only. We show how ignoring ß degradation leads to underestimating guard-bands by 19% on average.
+			  Our investigation revealed that the impact of aging is strongly dependent on the operating conditions of gates (i.e. input signal slew and output load capacitance), and not solely on the duty cycle of transistors.
+			  Neglecting this fact results in employing insufficient guard-bands and thus not sustaining reliability during lifetime. We demonstrate that degradation-aware libraries and tool flows are indispensable for not only accurately estimating guardbands, but also efficiently containing them.
+			  By considering aging degradations during logic synthesis, significantly more resilient circuits can be obtained. We further quantify the impact of aging on the degradation of image processing circuits.
+			  This goes far beyond investigating aging with respect to path delays solely. We show that in a standard design without any guardbanding, aging leads to unacceptable image quality after just one year.
+			  By contrast, if the synthesis tool is provided with the degradation-aware cell library, high image quality is sustained for 10 years (even under worst-case aging and without a guardband).
+			  Hence, using our approach, aging can be effectively suppressed.</p></div></div></li>
+            <li><font class="number">16.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Reliability-Aware Design to Suppress Aging Effects", <font class="conferance">DAC</font>, 2016.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Reliability-Aware Design to Suppress Aging Effects"</p></div></div></li>
-            <li><font class="number">17.</font> H. Amrouch, <font>B. Khaleghi</font>, A. Gerstlauer, J. Henkel, "Reliability-Aware Design to Suppress Aging Effects", <font class="conferance">DAC</font>, 2016</li>
+              <p><a href="http://dsn.ce.sharif.edu/wp-content/uploads/2012/10/HardLogic-Decomposition-FPL15.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Generous flexibility of Look-Up Tables (LUTs) in implementing arbitrary functions comes with significant performance and area overheads compared with their Application-Specific Integrated Circuit (ASIC) equivalent.
+			  One approach to alleviate such overheads is to use less flexible logic elements capable to implement majority of logic functions.
+			  In this paper, we first investigate the most frequently used functions in standard benchmarks and then design a set of less-flexible but area-efficient logic cells, called Hard Logics (HL).
+			  Since higher input functions have diverse classes, we leverage Shannon decomposition to break them into smaller ones to either reduce the HL design space complexity or attain asymmetric low input functions.
+			  A heterogeneous LUT-HL architecture and a mapping scheme are also proposed to attain maximum logic resource usage.
+			  Experimental results on MCNC benchmarks demonstrate that the proposed architecture reduces area-delay product by 13% and 36% as compared to LUT4 and LUT6 based FPGAs, respectively.
+			  Considering the same area budget, our proposed architecture improves performance by 17% and 2% as compared to LUT4 and LUT6 based FPGAs.</p></div></div></li>
+            <li><font class="number">17.</font> I. Ahmadpour, <font>B. Khaleghi</font>, H. Asadi, "An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions", <font class="conferance">FPL</font>, 2015.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions"</p></div></div></li>
-            <li><font class="number">18.</font> Ahmadpour, <font>B. Khaleghi</font>, H. Asadi, "An Efficient Reconfigurable Architecture by Characterizing Most Frequent Logic Functions", <font class="conferance">FPL</font>, 2015</li>
+              <p><a href="http://dsn.ce.sharif.edu/pdfs/16-march-6/tvlsi-2014-ieeexplore.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>With the continual scaling of feature size, system failure due to soft errors is getting more frequent in CMOS technology.
+			  Soft errors have particularly severe effects in static random-access memory (SRAM)-based reconfigurable devices (SRDs) since an error in SRD configuration bits can permanently change the functionality of the system.
+			  Since interconnect resources are the dominant contributor to the overall configuration memory upsets in SRD-based designs, the system failure rate can be significantly reduced by mitigating soft errors in routing fabric.
+			  This paper first presents a comprehensive analysis of SRD switch box susceptibility to short and open faults. Based on this analysis, we present a dependable routing fabric by efficiently employing asymmetric SRAM cells in configuration memory of SRDs.
+			  The proposed scheme is highly scalable and capable of achieving any desired level of dependability. In the proposed scheme, we also present a fault masking mechanism to mitigate the effect of soft errors in the routing circuitry.
+			  A routing algorithm is also proposed to take the advantage of the proposed routing fabric.
+			  Experimental results over the Microelectronics Center of North Carolina benchmarks show that the proposed scheme can mitigate both single and multiple event upsets in the routing fabric and can reduce system failure rate orders of magnitude as compared with the conventional protection techniques.</p></div></div></li>
+            <li><font class="number">18.</font> S. Yazdanshenas, H. Asadi, <font>B. Khaleghi</font>, "A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices", <font class="conferance">IEEE TVLSI</font>, 2015.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices"</p></div></div></li>
-            <li><font class="number">19.</font> S. Yazdanshenas, H. Asadi, <font>B. Khaleghi</font>, "A Scalable Dependability Scheme for Routing Fabric of SRAM-based Reconfigurable Devices", <font class="conferance">IEEE TVLSI</font>, 2015</li>
+              <p><a href="http://dsn.ce.sharif.edu/wp-content/uploads/2012/10/FPGA-Trojan-ESL15.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Hardware trojan horses (HTH) have recently emerged as a major security threat for field-programmable gate arrays (FPGAs).
+			  Previous studies to protect FPGAs against HTHs may still leave a considerable amount of logic resources to be misused by malicious attacks.
+			  This letter presents a low-level HTH protection scheme for FPGAs by filling the unused resources with the proposed dummy logic.
+			  In the proposed scheme, we identify the unused resources at the device layout-level and offer dummy logic cells for different resources.
+			  The proposed HTH protection scheme has been applied on Xilinx Virtex devices implementing a set of IWLS benchmarks.
+			  The results show that by employing the proposed HTH protection scheme, the chance of logic abuse can be significantly reduced.
+			  Experimental results also show that as compared to nonprotected designs, the proposed HTH scheme imposes no performance and power penalties.</p></div></div></li>
+            <li><font class="number">19.</font> <font>B. Khaleghi</font>, A. Ahari, H. Asadi, S. Bayat-Sarmadi, "FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic", <font class="conferance">IEEE ESL</font>, 2015.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic"</p></div></div></li>
-            <li><font class="number">20.</font> <font>B. Khaleghi</font>, A. Ahari, H. Asadi, S. Bayat-Sarmadi, "FPGA-based Protection Scheme Against Hardware Trojan Horse Insertion Using Dummy Logic", <font class="conferance">IEEE ESL</font>, 2015</li>
+              <p><a href="http://dsn.ce.sharif.edu/wp-content/uploads/2012/10/HardLogic-DarkSilicon-FPL14.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>While the transistor density continues to grow exponentially in Field-Programmable Gate Arrays (FPGAs), the increased leakage current of CMOS transistors act as a power wall for the aggressive integration of transistors in a single die.
+			  One recently trend to alleviate the power wall in FPGAs is to turn off inactive regions of the silicon die, referred to as dark silicon.
+			  This paper presents a reconfigurable architecture to enable effective fine-grained power gating of unused Logic Blocks (LBs) in FPGAs.
+			  In the proposed architecture, the traditional soft logic is replaced with Mega Cells (MCs), each consists of a set of complementary Generic Reconfigurable Hard Logic (GRHL) and a conventional Look-Up Table (LUT).
+			  Both GRHL cells and LUTs can be power gated and turned off by controlling configuration bits. In the proposed MC, only one cell is active and the others are turned off.
+			  Experimental results on MCNC benchmark suite reveal that the proposed architecture reduces the critical path delay, power, and Power Delay Product (PDP) of LBs up to 5.3%, 30.4%, and 28.8% as compared to the equivalent LUT-based architecture.</p></div></div></li>
+            <li><font class="number">20.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, Z. Ebrahimi, M. B. Tahoori, "Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design", <font class="conferance">FPL</font>, 2014.</li>
           </ul>
 
           <ul class="w3-ul">
             <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design"</p></div></div></li>
-            <li><font class="number">21.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, Z. Ebrahimi, M. B. Tahoori, "Towards Dark Silicon Era in FPGAs Using Complementary Hard Logic Design", <font class="conferance">FPL</font>, 2014</li>
-          </ul>
-
-          <ul class="w3-ul">
-            <li>
-              <p><a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
-              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>"A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology"</p></div></div></li>
-            <li><font class="number">22.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, M. B. Tahoori, "A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology", <font class="conferance">DATE</font>, 2014</li>
+              <p><a href="http://dsn.ce.sharif.edu/wp-content/uploads/2012/10/PCM-FPGA-DATE14.pdf"><div class="pdf"><i class="fa fa-file-pdf-o"></i> PDF</div></a></p>
+              <div class="dropdown"><div>Abstract </div><div class="dropdown-content"><p>Promising advantages offered by resistive NonVolatile Memories (NVMs) have brought great attention to replace existing volatile memory technologies.
+			  While NVMs were primarily studied to be used in the memory hierarchy, they can also provide benefits in Field-Programmable Gate Arrays (FPGAs).
+			  One major limitation of employing NVMs in FPGAs is significant power and area overheads imposed by the Peripheral Circuitry (PC) of NVM configuration bits.
+			  In this paper, we investigate the applicability of different NVM technologies for configuration bits of FPGAs and propose a power-efficient reconfigurable architecture based on Phase Change Memory (PCM).
+			  The proposed PCM-based architecture has been evaluated using different technology nodes and it is compared to the SRAM-based FPGA architecture.
+			  Power and Power Delay Product (PDP) estimations of the proposed architecture show up to 37.7% and 35.7% improvements over SRAM-based FPGAs, respectively, with less than 3.2% performance overhead.</p></div></div></li>
+            <li><font class="number">21.</font> A. Ahari, H. Asadi, <font>B. Khaleghi</font>, M. B. Tahoori, "A Power Efficient Reconfigurable Architecture Using PCM Configuration Technology", <font class="conferance">DATE</font>, 2014.</li>
           </ul>
       </div>
   </div>
   <div class="footer container-lg px-3" role="contentinfo" id="footer">
     <div class="text-black">
-      Designed by Fatemeh/ Last update: October 2018
+      Designed by Fatemeh - Last update: October 2018
     </div>
   </div>
 
