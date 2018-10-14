@@ -200,6 +200,7 @@
       margin-left: 10px;
       margin-right: 10px;
       background-color: #3A3A3A;
+      font-size: 14px;
     }
     .sticky_header{
       background-color: #313131;
@@ -383,24 +384,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <body onload="main_function()">
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:block" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
-      onclick="w3_close()"> <i class="fa fa-angle-double-left" style="font-size:48px;color:#B30909;"></i><br></button>
+      onclick="w3_close()"> <i class="fa fa-long-arrow-left" style="font-size:36px; color:#BB2B15;"></i><br></button>
       <img src="https://media.licdn.com/dms/image/C5603AQFgsZgt3WhBow/profile-displayphoto-shrink_800_800/0?e=1544054400&v=beta&t=uGWKnVZGlHuJ4Eqrn3GzmhFZ1TNKTPVaFCy5a_Z9zEc" alt="Behnam">
       <div id="menu_items">
-        <a href="../Behnam/behnamkhaleghi.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
-        <a href="../Behnam/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
-        <a href="../Behnam/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
+        <a href="../Site/index.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-home"></i> | Home</a>
+        <a href="../Site/Publications.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-clone"></i> | Publications</a>
+        <a href="../Site/Research.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-bar-chart-o"></i> | Research</a>
+        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar"></i> | Google Scholar</a>
+        <a href="../Site/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work</a>
+        <a href="../Site/Honors.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-trophy"></i> | Honors and Awards</a>
         <button id="menu" class="dropdown-btn"><i class="fa fa-mortar-board"></i> | CV <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
-          <a href="../Behnam/Behnam_CompactCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-file-text-o"></i> | Compact</a>
-          <a href="../Behnam/Behnam_DetailedCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-book"></i> | Detailed</a></div>
-        <a href="https://scholar.google.com/citations?user=NS__kn4AAAAJ&hl=en" class="w3-bar-item w3-button" id="menu"><i class="ai ai-google-scholar"></i> | Google Scholar</a>
-        <a href="../Behnam/Experience.html" class="w3-bar-item w3-button" id="menu"><i class="fa fa-pencil"></i> | Teaching and Work Experience</a>
+          <a href="../Site/Behnam_CompactCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-file-text-o"></i> | Compact</a>
+          <a href="../Site/Behnam_DetailedCV.pdf" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-book"></i> | Detailed</a>
+        </div>
         <button id="menu" class="dropdown-btn"><i class="fa fa-comments-o"></i> | Contact Me<i class="fa fa-caret-down"></i></button>
         <div class="dropdown-container">
           <a href="mailto:bkhaleghi@ucsd.edu?" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="material-icons" style="font-size:16px">email</i> | Email</a>
           <a href="https://www.linkedin.com/in/behnam-khaleghi-86084447/" class="w3-bar-item w3-button" id="menu">&emsp;&emsp;&emsp;<i class="fa fa-linkedin-square"></i> | Linkedin</a>        </div>
+      </div>
       </div>
     </div>
     <div id="main">
@@ -413,29 +417,34 @@
         <h2>Research</h2>
         <hr class="hr">
         <p>
-          Some Research will be added here. </br>
-          Some Research will be added here. </br>
-          Some Research will be added here. </br>
-          Some Research will be added here. </br>
+          I'm mainly interested in emerging computing (e.g., in-memory accleration), reliable system design with the focus on challenges associated with emerging technologies and deep-nano CMOS degradations, machine learning accleration particularly aided by emerging computing solutions, and electronic design autimation (I'm highly interested in working and dealing with toolsets).</br>
+		  During the PhD, my main focus will be in-memory computing and corresponding reliability challenges as well as machine learning accleration.
+		  In the past, I did research mostly on optimizing reconfigurable architectures from a circuit point of view, which also dealt with employing emerging technologies, e.g., non-volatile memories and nanoelectromechanical relays, in FPGA architectures.
+		  I was pleased to visit CES lab in Karlsruhe Institute of Technology, in the summers of 2014 and 2015, wherein I worked on proposing methods to optimize circuits against aging and temperature threats.
+		  </br>
         </p>
+		<p><font class="research_title">Research Assistant</font></p>
+        <p>System Energy Efficiency Lab <a class="link" href="http://seelab.ucsd.edu/">(SeeLab)</a>, University of California San Diego (2018&#8212;current), advisor: <a class="link" href="http://cseweb.ucsd.edu/~trosing/">Prof. Tajana Rosing</a></p>
+        <p>Research focus: Emerging Computing, Reliability, Machine Learning Accleration</p>
+        <hr>
         <p><font class="research_title">Research Assistant</font></p>
-        <p>Chair for Embedded Systems,<a class="link" href="http://www.kit.edu/english/">Karlsruhe Institute of Technology</a> (Summer 2014 and 2015), Advisor: <a class="link" href="http://ces.itec.kit.edu/21_henkel.php">Prof. Jorg Henkel</a>, Mentor: <a class="link" href="https://ces.itec.kit.edu/21_amrouch.php">Dr. Hussam Amrouch</a></p>
+        <p>Chair for Embedded Systems <a class="link" href="http://ces.itec.kit.edu/">(CES)</a>, Karlsruhe Institute of Technology, (Summer 2014 and 2015), advisor: <a class="link" href="http://ces.itec.kit.edu/21_henkel.php">Prof. Joerg Henkel</a>, mentor: <a class="link" href="https://ces.itec.kit.edu/21_amrouch.php">Dr. Hussam Amrouch</a></p>
         <p>2015: Increasing the reliability of embedded systems in the scope of voltage scaling, aging and thermal effects</p>
         <p>2014: Reliability degradations in SRAM-based components and logic circuits</p>
         <hr>
         <p><font class="research_title">Research Assistant</font></p>
-        <p>Data Storage Systems and Networks <a class="link" href="http://dsn.ce.sharif.edu">(DSN)</a> Laboratory, 2013-2017, Advisor: <a class="link" href="http://sharif.edu/~asadi/">Prof. Hossein Asadi</a></p>
-        <p><font class="Research">M.Sc:</font> An Efficient Reconfigurable Architecture Using Resistive RAM</p>
-        <p><font class="Research">B.Sc:</font> Evaluation of Using PCM in Reconfigurable Devices</p>
+        <p>Data Storage Systems and Networks <a class="link" href="http://dsn.ce.sharif.edu">(DSN)</a> Lab, 2013–2017, Advisor: <a class="link" href="http://sharif.edu/~asadi/">Prof. Hossein Asadi</a></p>
+        <p><font class="Research">M.Sc:</font> An Efficient Reconfigurable Architecture Using Resistive RAM <a class="link" href="https://ieeexplore.ieee.org/document/8260547">(paper)</a></p>
+        <p><font class="Research">B.Sc:</font> Evaluation of Using PCM in Reconfigurable Devices <a class="link" href="https://ieeexplore.ieee.org/document/6800550">(paper)</a></p>
         <hr>
         <p><font class="research_title">Research Mentor</font></p>
-        <p><font class="Research">M.Sc. Thesis:</font> An Efficient Reconfigurable Architecture in General Purpose Processors to Improve Area and Performance</p>
-        <p><font class="Research">M.Sc. Thesis:</font> An Efficient Routing Algorithm to Reduce Aging Effect of Reconfigurable Device</p>
-        <p><font class="Research">M.Sc. Thesis:</font> An Efficient Reconfigurable Architecture Based on Most Frequent Logic Functions in Dark Silicon Era</p>
+        <p><font class="Research">M.Sc. Thesis:</font> An Efficient Reconfigurable Architecture in General Purpose Processors to Improve Area and Performance <a class="link" href="https://ieeexplore.ieee.org/abstract/document/8316989">(paper)</a></p>
+        <p><font class="Research">M.Sc. Thesis:</font> An Efficient Routing Algorithm to Reduce Aging Effect of Reconfigurable Device <a class="link" href="https://ieeexplore.ieee.org/document/7577341">(paper)</a></p>
+        <p><font class="Research">M.Sc. Thesis:</font> An Efficient Reconfigurable Architecture Based on Most Frequent Logic Functions in Dark Silicon Era <a class="link" href="https://ieeexplore.ieee.org/abstract/document/7775010">(paper)</a></p>
         <p><font class="Research">B.Sc. Thesis:</font> Mapping Algorithms for Heterogeneous FPGAs</p>
         <hr>
         <p><font class="research_title">Paper Review</font></p>
-        <p>A manifold of paper reviewing by myself or on the behalf of others</p>
+        <p>A manifold of papers review of IEEE TCAD, IEEE TC, IEEE TCAS, IEEE TVLSI, IEEE TNS, IEEE TR, ACM JETC, VLSI Integration, etc.</p>
       </div>
     <div class="footer container-lg px-3" role="contentinfo" id="footer">
       <div class="text-black">
