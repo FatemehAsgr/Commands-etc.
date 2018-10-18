@@ -1,0 +1,16 @@
+Database in server
+
+ssh username@tavana.university.edu
+Enter password: 
+cd Database_Shapenet2/
+mysql -u root -p
+Enter password:
+mysql> SHOW DATABASES;
+mysql> USE Shapenet_database;
+mysql> SHOW DATABASES;
+mysql> source sitename.20180519.sql
+	    / source annotation.20180610.sql (current)
+
+SELECT * FROM table LIMIT 10 OFFSET N-10 : to show the last lines 
+
+SELECT * FROM view_synset LIMIT 10 OFFSET 10 : to show the last lines 
